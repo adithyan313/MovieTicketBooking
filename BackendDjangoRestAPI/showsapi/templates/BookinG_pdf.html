@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking PDF</title>
+</head>
+<body>
+    <center><h1>{{ booking.movie.name }}</h1></center> 
+    <center><img src="{{booking.movie.poster_image}}" alt="movieposter" style="width: 200px; height: 200px;" /> </center>
+    <center><p>Hey <b style="color: blue;">{{ booking.user.username }}</b>, this is your booking with ID <b style="color: green;">{{ booking.id }}</b>.</p>
+    <p>Booking date: <b style="color: green;">{{ booking.booking_date }}</b>. Tickets: <b style="color: chartreuse;">{{ booking.tickets }}</b></p> 
+    <b>Order ID: {{ booking.razorpay_order_id }}</b></center>
+    <center><img src="{{ booking.qr_image.url }}" alt="QR Code" style="width: 200px; height: 200px;" /></center> 
+    
+</html>

@@ -1,0 +1,12 @@
+
+.row {
+  clear: both;  
+}
+
+.row {
+  display: flex;
+  flex-direction: column;  
+}
+.row > div {
+  margin-bottom: 20px;  
+}

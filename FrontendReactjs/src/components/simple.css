@@ -1,0 +1,23 @@
+.ticket-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+    gap: 10px; /* Space between grid items */
+  }
+  
+  .ticket-button {
+    width: 50px; /* Set the width to create square-shaped buttons */
+    height: 50px; /* Set the height to create square-shaped buttons */
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+    transition: background-color 0.2s;
+  }
+  
+  .ticket-button.selected {
+    background-color: lightgreen; /* Highlight the selected button */
+  }
+  
+  .ticket-button:hover {
+    background-color: lightgray; /* Change color on hover */
+  }
+  
